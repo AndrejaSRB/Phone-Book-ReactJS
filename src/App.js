@@ -6,7 +6,7 @@ class App extends Component {
   state = {
     contacts: [],
     search: ""
-  }
+  };
   renderTable = () => {
       return this.state.contacts.map((contact, index) =>
     <tr key={index}>
@@ -19,16 +19,16 @@ class App extends Component {
       </td>
     </tr>
     )
-  }
+  };
   handleDelete = index => {
     let contacts = [...this.state.contacts];
     contacts.splice(index,1);
     this.setState({contacts})     
-  }
+  };
   allContacts = contact => {
     let contacts = [...this.state.contacts, contact];
     this.setState({contacts})
-  }
+  };
   render() {
     return (
       <div className="app">
@@ -52,7 +52,7 @@ class App extends Component {
         </div>
       </div>
     );
-  }
+  };
 }
 
 export default App;

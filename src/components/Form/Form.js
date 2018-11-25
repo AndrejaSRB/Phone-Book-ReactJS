@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Modal from 'react-responsive-modal';
-import './Form.css'
+import './Form.css';
 
 class Form extends Component {
     state = {
@@ -9,7 +9,6 @@ class Form extends Component {
       onOpenModal = () => {
         this.setState({ open: true });
       };
-    
       onCloseModal = () => {
         this.setState({ open: false });
       };
@@ -21,10 +20,10 @@ class Form extends Component {
           email: e.target.email.value,
           address: e.target.address.value,
         })
-      }
+      };
       handleChange = e => {
         e.preventDefault();
-      }
+      };
       render() {
         const { open } = this.state;
         return (
@@ -74,7 +73,7 @@ class Form extends Component {
             </Modal>
           </div>
         );
-      }
+      };
     }
  
 export default Form;
