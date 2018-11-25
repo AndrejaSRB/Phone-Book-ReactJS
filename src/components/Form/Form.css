@@ -1,0 +1,37 @@
+.add-contact {
+    background-color: #26a69a;
+    color: #eeeeee;
+    padding: 8px 15px;
+    font-size: 13px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.add-contact:hover {
+    background-color: #263238;
+    transition: all .7s;
+}
+.styles_modal__gNwvD {
+    width: 500px;
+}
+form {
+    margin: 20px 0;
+    border-top: 1px solid gray;
+}
+form input {
+    width: 50%;
+    padding-left: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-right: 80px;
+}
+.form-item {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+.form-item:nth-child(4) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 0;
+}
